@@ -1,0 +1,180 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: none;
+}
+
+
+header{
+  background: #FFC107;
+  height: 50px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.header-title{
+  position: absolute;
+  display: flex;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 30px;
+  color: #fff;
+}
+
+.header-title > div{
+  border: 2px solid #fff;
+  padding: 3px 10px;
+  margin: 0 3px;
+  border-radius: 6px;
+}
+
+.game-box{
+  display: flex;
+  background: #5dccff;
+  min-height: calc(100vh - 50px);
+}
+
+.controls {
+  width: 25%;
+  text-align: center;
+}
+
+.controls button {
+  max-width: 150px;
+  width: 80%;
+  padding: 8px 0;
+  background: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: 5px auto;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.controls div:first-of-type{
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.tile-box{
+  width: auto;
+  margin: 40px 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(3, 169, 244, 0.7);
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.game-display button{
+  max-width: 150px;
+  width: 80%;
+  padding: 8px 0;
+  background: none;
+  text-transform: uppercase;
+  margin: 5px auto;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.button-box {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px 0;
+}
+.moves {
+  width: 25%;
+}
+.game-display {
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.tile-row{
+  display: flex;
+  align-items: center;
+}
+
+.tile{
+  width: 50px;
+  border: 1px solid;
+  text-align: center;
+  height: 50px;
+  line-height: 48px;
+  margin: 3px;
+  color: #333;
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 8px;
+  background: #efefef;
+  border: 2px outset;
+  cursor: pointer;
+}
+.empty{
+  background: #039ee4;
+  border: none;
+}
+.button-box-title{
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  border-top: 1px dashed #3F51B5;
+  padding: 10px 50px 0;
+  color: #3F51B5;
+  text-transform: uppercase;
+}
+
+button.orange-button{
+  background: #ff9800;
+}
+
+button.green-button{
+  background: #8BC34A;
+}
+
+.level{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.select-level{
+  cursor: pointer;
+  opacity: 1;
+}
+
+.set-level{
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.moves-list{
+  background: #03a9f4;
+  padding: 10px 40px;
+  margin: 10px 20px 20px;
+  border-radius: 5px;
+  height: calc(100vh - 200px);
+  overflow: auto;
+}
+
+.moves > div{
+  color: #3F51B5;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 30px;
+  margin-top: 15px;
+}
+
+
+.moves-list li {
+  margin: 5px 0;
+}

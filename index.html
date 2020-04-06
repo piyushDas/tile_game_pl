@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="./css/master.css">
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <div class="header-title">
+          <div>N</div>
+          <div>U</div>
+          <div>B</div>
+          <div>L</div>
+          <div>E</div>
+        </div>
+      </header>
+      <div class="game-box">
+        <div class="controls">
+          <div>
+            <span>Moves:</span>
+            <span id="moves-count"> 0</span>
+          </div>
+          <div>
+            <button type="button" class="orange-button" onclick="undoMove()">Undo</button>
+            <!-- <button type="button">Auto Solve</button -->
+          </div>
+          <div>
+            <button type="button" class="green-button" onclick="newgame()">New game</button>
+          </div>
+        </div>
+        <div class="game-display">
+          <div id="tile-box" class="tile-box"></div>
+          <div class="button-box-title">
+            Difficulty level
+          </div>
+          <div class="button-box">
+            <button id="easy" class="level" onclick="generateTiles(3,3, 'easy')">Easy</button>
+            <button id="medium" class="level" onclick="generateTiles(4,4, 'medium')">Medium</button>
+            <button id="difficult" class="level" onclick="generateTiles(10,10, 'difficult')">Difficult</button>
+          </div>
+        </div>
+        <div class="moves">
+          <div> Your moves</div>
+          <ol id="moves-list" class="moves-list"></ol>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/app.js" async></script>
+</html> 
